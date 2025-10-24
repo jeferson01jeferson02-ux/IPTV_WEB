@@ -1,5 +1,5 @@
 <resources>
-    <style name="Theme.AppDark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="ThemeIPTVServidor" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">#FF0000</item>
         <item name="colorPrimaryVariant">#B20000</item>
         <item name="colorOnPrimary">#FFFFFF</item>

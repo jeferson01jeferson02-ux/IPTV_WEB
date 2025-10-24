@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.appdark"
+    namespace = "com.iptvservidor"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.appdark"
+        applicationId = "com.iptvservidor"
         minSdk = 21
         targetSdk = 33
         versionCode = 1
@@ -19,10 +19,7 @@ android {
     buildTypes {
         getByName("release") {
             isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
 
@@ -46,4 +43,4 @@ dependencies {
     implementation("androidx.webkit:webkit:1.4.0")
     implementation("com.google.android.material:material:1.8.0")
     implementation("com.squareup.okhttp3:okhttp:4.11.0")
-    }
+}

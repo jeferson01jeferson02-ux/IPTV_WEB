@@ -1,2 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- Cor principal do app (usada no ic_launcher_foreground e tema) -->
+    <color name="colorPrimary">#39FF14</color> <!-- Neon verde -->
+
+    <!-- Cores secundárias / de suporte (padrão Android) -->
+    <color name="colorPrimaryDark">#00FF00</color> <!-- Verde escuro -->
+    <color name="colorAccent">#39FF14</color>       <!-- Neon verde -->
+
+    <!-- Branco e preto para contraste -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Fundo adaptativo / transparente se necessário -->
+    <color name="background">#000000</color>
+</resources>

@@ -1,27 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.appdark">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.iptvservidor">
 
+    <!-- SDK mínimo e alvo -->
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="33"/>
+
+    <!-- Permissões -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
 
     <application
-        android:theme="@style/Theme.AppDark"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="IPTV SERVIDOR"
+        android:theme="@style/ThemeIPTVServidor"
         android:allowBackup="true"
-        android:label="AppDark"
         android:supportsRtl="true"
-        android:networkSecurityConfig="@xml/network_security_config">
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="HardcodedDebugMode">
 
+        <!-- Activity principal -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.iptvservidor.MainActivity"
             android:exported="true"
-            android:screenOrientation="landscape">
-
+            android:screenOrientation="landscape"
+            android:theme="@style/ThemeIPTVServidor">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
 
     </application>
+
 </manifest>
